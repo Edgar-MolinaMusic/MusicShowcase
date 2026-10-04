@@ -3,46 +3,162 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Edgar Molina | Music Composition Showcase</title>
+    <title>Tried_And_True.tdk | Composer Portfolio</title>
+    <!-- Importing mystical Google Fonts -->
+    <link rel="preconnect" href="https://googleapis.com">
+    <link rel="preconnect" href="https://gstatic.com" crossorigin>
+    <link href="https://googleapis.com/css2?family=Cinzel:wght@500;700&family=Lora:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+    
     <style>
-        body { font-family: sans-serif; background: #121212; color: #fff; max-width: 800px; margin: 0 auto; padding: 20px; }
-        header { text-align: center; margin-bottom: 50px; }
-        h1 { color: #00ffcc; }
-        .track { background: #1e1e1e; padding: 20px; margin-bottom: 20px; border-radius: 8px; }
-        audio { width: 100%; margin-top: 10px; }
+        /* Base Styling & Fairytale Color Palette */
+        body {
+            font-family: 'Lora', serif;
+            background: linear-gradient(135deg, #0d1b11 0%, #050a06 100%);
+            color: #e2ecc8;
+            max-width: 850px;
+            margin: 0 auto;
+            padding: 40px 20px;
+            line-height: 1.6;
+        }
+
+        /* Mystical Header Layout */
+        header {
+            text-align: center;
+            margin-bottom: 60px;
+            position: relative;
+            padding-bottom: 20px;
+        }
+
+        header::after {
+            content: "✦ 🌳 ✦";
+            display: block;
+            font-size: 1.2rem;
+            color: #8fa874;
+            margin-top: 15px;
+            letter-spacing: 5px;
+        }
+
+        h1 {
+            font-family: 'Cinzel', serif;
+            color: #b2cf8d;
+            font-size: 2.8rem;
+            margin-bottom: 5px;
+            letter-spacing: 2px;
+            text-shadow: 0 0 15px rgba(178, 207, 141, 0.3);
+        }
+
+        header p {
+            font-style: italic;
+            color: #a3b899;
+            font-size: 1.1rem;
+        }
+
+        h2 {
+            font-family: 'Cinzel', serif;
+            color: #d4e7be;
+            border-bottom: 1px solid rgba(143, 168, 116, 0.2);
+            padding-bottom: 10px;
+            margin-top: 40px;
+            letter-spacing: 1px;
+        }
+
+        /* Glow-in-the-dark Track Cards (Firefly Vibe) */
+        .track {
+            background: rgba(20, 35, 25, 0.6);
+            border: 1px solid rgba(143, 168, 116, 0.2);
+            padding: 25px;
+            margin-bottom: 25px;
+            border-radius: 12px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+            transition: all 0.4s ease;
+            backdrop-filter: blur(5px);
+        }
+
+        /* Hover effect simulating magic / bioluminescence */
+        .track:hover {
+            transform: translateY(-4px);
+            border-color: #b2cf8d;
+            box-shadow: 0 0 20px rgba(178, 207, 141, 0.2);
+            background: rgba(25, 45, 32, 0.8);
+        }
+
+        .track h3 {
+            font-family: 'Cinzel', serif;
+            color: #ffffff;
+            margin-top: 0;
+            margin-bottom: 5px;
+            font-size: 1.3rem;
+        }
+
+        .track-meta {
+            font-size: 0.9rem;
+            color: #8fa874;
+            margin-bottom: 15px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        /* Customizing Native Audio Player Style */
+        audio {
+            width: 100%;
+            margin-top: 10px;
+            border-radius: 8px;
+            opacity: 0.85;
+            transition: opacity 0.3s;
+        }
+
+        audio:hover {
+            opacity: 1;
+        }
+
+        /* Simple Footer */
+        footer {
+            text-align: center;
+            margin-top: 80px;
+            font-size: 0.85rem;
+            color: #556b43;
+            letter-spacing: 1px;
+        }
     </style>
 </head>
 <body>
 
     <header>
         <h1>Edgar Molina</h1>
-        <p>Music Producer & Composer for Film, Games, and Artists</p>
+        <p>Composer & Sound Designer for Film, Games, and </p>
     </header>
 
     <section id="portfolio">
-        <h2>Works</h2>
+        <h2>The Auditive Works</h2>
         
         <!-- Track 1 -->
         <div class="track">
-            <h3>Orchestralistimo</h3>
-            <p>Style: Orchestral</p>
+            <h3>Overseeing Eagle</h3>
+            <div class="track-meta">Full Orchestra sans Percussion</div>
+            <p>A gentle, atmospheric woodwind layout written for a mystical village exploration theme.</p>
             <audio controls src="audio/OrchestralINTRO.mp3"></audio>
         </div>
 
         <!-- Track 2 -->
         <div class="track">
-            <h3>The King Enters</h3>
-            <p>Style: Symphonic Rock</p>
-            <audio controls src="audio/TheKingEntersALL.mp3"></audio>
+            <h3>The Goblin Bazaar</h3>
+            <div class="track-meta">Quirky / Cinematic Percussion</div>
+            <p>An upbeat, chaotic orchestral piece featuring unconventional bells, shakers, and wood blocks.</p>
+            <audio controls src="audio/track2.mp3"></audio>
         </div>
 
         <!-- Track 3 -->
         <div class="track">
-            <h3>Ambient Death</h3>
-            <p>Style: Ambient</p>
-            <audio controls src="audio/AmbientDeath.mp3"></audio>
+            <h3>Twilight Canopy</h3>
+            <div class="track-meta">Ambient Soundscape</div>
+            <p>An ethereal, pad-heavy electronic soundscape layered with real forest recordings.</p>
+            <audio controls src="audio/track3.mp3"></audio>
+        </div>
     </section>
+
+    <footer>
+        <p>© 2026 Edgar Molina. Ceativity powers us all.</p>
+    </footer>
 
 </body>
 </html>
-<!-- Initial Commit -->
